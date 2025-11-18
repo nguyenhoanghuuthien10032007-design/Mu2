@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Manchester United - Fan Page</title>
+<style>
+  :root{
+    --red:#c70101; --dark:#0f0f0f; --card:#1a1a1a; --muted:#bdbdbd;
+    --glass: rgba(255,255,255,0.03);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:Inter, Arial, sans-serif; background:#0b0b0b; color:#fff;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{background:var(--red); padding:18px 16px; text-align:center; font-size:28px; font-weight:700}
+  .container{max-width:1100px;margin:28px auto;padding:0 16px}
+  .hero{
+    display:flex;gap:20px;align-items:center;padding:22px;background:linear-gradient(90deg, rgba(199,1,1,0.12), rgba(0,0,0,0.1));
+    border-radius:12px;
+  }
+  .crest{width:120px;height:120px;flex:0 0 120px}
+  .hero h1{margin:0;font-size:28px}
+  .hero p{margin:6px 0;color:var(--muted)}
+  nav{display:flex;gap:12px;justify-content:center;margin:18px 0}
+  nav a{color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;background:var(--glass)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:20px}
+  .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+  .card h3{margin:0 0 8px 0;color:var(--red)}
+  .muted{color:var(--muted);font-size:14px}
+  .trophies{display:flex;gap:10px;flex-wrap:wrap}
+  .trophies img{width:72px;height:72px;object-fit:contain;border-radius:8px;background:#fff;padding:6px}
+  .players{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .player{width:120px;text-align:center}
+  .player svg{width:96px;height:96px}
+  footer{text-align:center;color:var(--muted);margin:30px 0 60px 0}
+  @media (max-width:520px){.hero{flex-direction:column;align-items:flex-start}.crest{width:96px;height:96px}}
+</style>
+</head>
+<body>
+<header>Manchester United</header>
+
+<div class="container">
+  <div class="hero card" aria-label="Hero">
+    <img class="crest" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United crest">
+    <div>
+      <h1>Manchester United — A Great Team</h1>
+      <p class="muted">Thành lập 1878 (gốc Newton Heath), sân nhà: Old Trafford — “The Theatre of Dreams”.</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#history">Lịch sử</a>
+    <a href="#honours">Danh hiệu</a>
+    <a href="#players">Cầu thủ</a>
+    <a href="#transfers">Chuyển nhượng</a>
+    <a href="#fans">Lượng fan</a>
+    <a href="#coaches">Huấn luyện viên</a>
+  </nav>
+
+  <section id="history" class="card">
+    <h3>Lịch sử hình thành</h3>
+    <p class="muted">Manchester United bắt nguồn từ Newton Heath LYR FC (1878). Đổi tên thành Manchester United năm 1902. Đạt nhiều thành công quốc nội và châu Âu, đặc biệt thời Sir Alex Ferguson (1986–2013).</p>
+  </section>
+
+  <div class="grid">
+    <section id="honours" class="card">
+      <h3>Danh hiệu nổi bật</h3>
+      <div class="trophies" aria-hidden="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Premier_League_Trophy.png" alt="Premier League trophy" title="Premier League">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/UEFA_Champions_League_trophy.png" alt="UEFA Champions League trophy" title="Champions League">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/FA_Cup_Trophy.png" alt="FA Cup trophy" title="FA Cup">
+      </div>
+      <p class="muted" style="margin-top:10px">Các con số: Premier League (20), Champions League (3), FA Cup (12) — (ví dụ minh họa).</p>
+    </section>
+
+    <section id="players" class="card">
+      <h3>Cầu thủ nổi bật</h3>
+      <div class="players">
+        <!-- SVG silhouette đảm bảo hiển thị -->
+        <div class="player" title="Eric Cantona">
+          <svg viewBox="0 0 64 64" role="img" aria-label="player silhouette">
+            <circle cx="32" cy="18" r="10" fill="#fff" opacity="0.06"></circle>
+            <path d="M16 58c0-10 8-18 16-18s16 8 16 18" fill="#fff" opacity="0.06"></path>
+            <text x="32" y="54" font-size="8" text-anchor="middle" fill="#fff">Cantona</text>
+          </svg>
+        </div>
+
+        <div class="player" title="David Beckham">
+          <svg viewBox="0 0 64 64" role="img" aria-label="player silhouette">
+            <circle cx="32" cy="18" r="10" fill="#fff" opacity="0.06"></circle>
+            <path d="M14 58c0-10 9-18 18-18s18 8 18 18" fill="#fff" opacity="0.06"></path>
+            <text x="32" y="54" font-size="8" text-anchor="middle" fill="#fff">Beckham</text>
+          </svg>
+        </div>
+
+        <div class="player" title="Wayne Rooney">
+          <svg viewBox="0 0 64 64" role="img" aria-label="player silhouette">
+            <circle cx="32" cy="18" r="10" fill="#fff" opacity="0.06"></circle>
+            <path d="M18 56c0-9 7-16 14-16s14 7 14 16" fill="#fff" opacity="0.06"></path>
+            <text x="32" y="54" font-size="8" text-anchor="middle" fill="#fff">Rooney</text>
+          </svg>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top:10px">Danh sách ngắn: Eric Cantona, David Beckham, Ryan Giggs, Paul Scholes, Wayne Rooney, Cristiano Ronaldo (khoảng thời gian khác nhau).</p>
+    </section>
+
+    <section id="transfers" class="card">
+      <h3>Chuyển nhượng tiêu biểu</h3>
+      <p class="muted">Ví dụ: Cristiano Ronaldo (ra đi & trở lại), Wayne Rooney (từ Everton), các bản hợp đồng lớn khác đã thay đổi vận mệnh đội bóng trong nhiều mùa giải.</p>
+    </section>
+
+    <section id="fans" class="card">
+      <h3>Lượng fan & ảnh hưởng toàn cầu</h3>
+      <p class="muted">Man Utd là một trong những CLB có lượng fan lớn nhất thế giới, hàng chục triệu fan trên mạng xã hội và nhiều fan club chính thức trên toàn cầu.</p>
+      <!-- Inline small stadium SVG as guaranteed-image -->
+      <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+        <svg viewBox="0 0 120 60" width="160" height="80" aria-hidden="true">
+          <rect x="2" y="18" width="116" height="30" rx="6" fill="#222"></rect>
+          <rect x="10" y="8" width="100" height="14" rx="4" fill="#fff" opacity="0.04"></rect>
+          <text x="60" y="40" text-anchor="middle" font-size="8" fill="#fff" opacity="0.7">Old Trafford (stadium)</text>
+        </svg>
+        <p class="muted" style="margin:0">Sân nhà: Old Trafford — sức chứa lớn, biểu tượng của CLB.</p>
+      </div>
+    </section>
+
+    <section id="coaches" class="card">
+      <h3>Huấn luyện viên tiêu biểu</h3>
+      <p class="muted"><strong>Sir Alex Ferguson</strong> — huyền thoại, giai đoạn thành công dài nhất. <br> Các HLV khác: Matt Busby (tiền nhiệm lớn), hiện tại (ví dụ) — thay đổi theo thời gian.</p>
+    </section>
+  </div>
+
+  <section class="card" style="margin-top:18px">
+    <h3>Ghi chú kỹ thuật</h3>
+    <ul class="muted" style="margin:8px 0 0 18px">
+      <li>File này là một trang tĩnh HTML + CSS — lưu thành <code>index.html</code>.</li>
+      <li>Ảnh logo & cup dùng link Wikimedia (cần Internet). Các hình cầu thủ/stadium dùng SVG nhúng—chắc chắn hiển thị.</li>
+      <li>Không dùng JavaScript để giảm lỗi; nếu cần tương tác, mình sẽ thêm JS an toàn.</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Manchester United — Sample Fan Page • Lưu file & mở trực tiếp trong trình duyệt
+  </footer>
+</div>
+</body>
+</html>
